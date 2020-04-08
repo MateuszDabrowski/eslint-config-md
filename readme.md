@@ -4,13 +4,13 @@
 
 These are the settings for ESLint and Prettier I use for  my personal projects
 
-## Installing
+## Installation
 
 You can use this config **globally** and/or **locally** per project.
 
 It's usually best to install this locally once per project, that way you can have project specific settings as well as sync those settings with others working on your project via git.
 
-## Local / Per Project Install
+### Local / Per Project Install
 
 1. If you don't already have a `package.json` file, create one with `npm init -y`.
 
@@ -44,7 +44,7 @@ It's usually best to install this locally once per project, that way you can hav
 6. Now you can manually lint your code by running `npm run lint` and fix all fixable issues with `npm run lint:fix`.
    You probably want your editor to do this though.
 
-## Global Install
+### Global Install
 
 1. First install everything needed:
 
@@ -69,7 +69,7 @@ In your `.eslintrc.json` file, it should look like this:
 
 3. To use from the CLI, you can now run `eslint .` or configure your editor as we show next.
 
-# Override
+## Overriding
 
 If you'd like to override `eslint` or `prettier` settings, you can add the rules in your `.eslintrc.json` file.
 
@@ -95,7 +95,11 @@ Note that prettier rules overwrite anything in this config (trailing comma, and 
 }
 ```
 
-## With VS Code
+Overrides can also be added to React package.json.
+
+## Usage
+
+### With VS Code
 
 You should read this entire thing. Serious!
 
@@ -123,14 +127,16 @@ Once you have done one, or both, of the above installs. You probably want your e
 "prettier.disableLanguages": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
 ```
 
-## With Create React App
+### With Create React App
 
 1. Run `npx install-peerdeps --dev eslint-config-md`
 1. Open your `package.json` and replace `"extends": "react-app"` with `"extends": "md"`
 
-## 🤬🤬🤬🤬 ITS NOT WORKING
+## Not working
 
 Start fresh. Sometimes npm modules can goof you up.
+
+### For local installation
 
 This will remove them all from the project.
 
@@ -140,10 +146,14 @@ npm remove eslint-config-onepass babel-eslint eslint eslint-config-prettier esli
 
 Then, remove your `package-lock.json` file and delete the `node_modules/` directory.
 
-- To do the above for global installation, add the `--global` flag.
+### For global installation
 
-  ```
-  npm remove --global eslint-config-onepass babel-eslint eslint eslint-config-prettier eslint-config-airbnb eslint-plugin-html eslint-plugin-prettier eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react prettier eslint-plugin-react-hooks
-  ```
+Add the `--global` flag.
 
-Then follow the above instructions again from start.
+```
+npm remove --global eslint-config-onepass babel-eslint eslint eslint-config-prettier eslint-config-airbnb eslint-plugin-html eslint-plugin-prettier eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react prettier eslint-plugin-react-hooks
+```
+
+Then, remove your `package-lock.json` file and delete the `node_modules/` directory.
+
+After uninstalled, follow the above instructions again from start.
