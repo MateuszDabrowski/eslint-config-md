@@ -1,11 +1,8 @@
-# eslint-config-onepass
+# eslint-config-md
 
 [![npm version](https://badge.fury.io/js/eslint-config-md.svg)](https://badge.fury.io/js/eslint-config-md)
 
 These are the settings for ESLint and Prettier I use for  my personal projects
-
-- JavaScript only latest version: `1.6.0`
-- TypeScript support: `v2.x.x`
 
 ## Installing
 
