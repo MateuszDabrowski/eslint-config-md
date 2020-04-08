@@ -1,11 +1,11 @@
 {
-  "name": "eslint-config-onepass",
-  "version": "2.2.0",
+  "name": "eslint-config-md",
+  "version": "1.0.0",
   "description": "ESLint and Prettier Custom Config",
   "main": "index.js",
-  "license": "MIT",
-  "repository": "https://github.com/onepassapp/eslint-config-onepass.git",
-  "author": "abhijithvijayan <34790378+abhijithvijayan@users.noreply.github.com>",
+  "license": "WTFPL",
+  "repository": "https://github.com/MateuszDabrowski/eslint-config-md",
+  "author": "Mateusz Dąbrowski",
   "keywords": [
     "javascript",
     "ecmascript",
@@ -13,8 +13,10 @@
     "lint",
     "config",
     "prettier",
-    "onepass",
-    "typescript"
+    "md",
+    "typescript",
+    "js",
+    "ts"
   ],
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.25.0",
@@ -27,7 +29,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.19.0",
-    "eslint-plugin-react-hooks": "^3.0.0",
+    "eslint-plugin-react-hooks": "^3.0.0 || ^2.5.0",
     "prettier": "^2.0.2"
   },
   "devDependencies": {
@@ -41,8 +43,9 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.19.0",
-    "eslint-plugin-react-hooks": "^3.0.0",
-    "prettier": "^2.0.2"
+    "eslint-plugin-react-hooks": "^3.0.0 || ^2.5.0",
+    "prettier": "^2.0.2",
+    "typescript": "^3.8.3"
   },
   "scripts": {
     "lint": "eslint .",

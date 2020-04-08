@@ -1,6 +1,6 @@
 # eslint-config-onepass
 
-[![npm version](https://badge.fury.io/js/eslint-config-onepass.svg)](https://badge.fury.io/js/eslint-config-onepass)
+[![npm version](https://badge.fury.io/js/eslint-config-md.svg)](https://badge.fury.io/js/eslint-config-md)
 
 These are the settings for ESLint and Prettier I use for  my personal projects
 
@@ -18,15 +18,9 @@ It's usually best to install this locally once per project, that way you can hav
 1. If you don't already have a `package.json` file, create one with `npm init -y`.
 
 2. Then we need to install everything needed by the config:
-   
-    i. For **JavaScript** only version:
-    ```
-    npx install-peerdeps eslint-config-onepass@1.6.0 --dev
-    ```
-    ii. For **TypeScript** version:
 
     ```
-    npx install-peerdeps eslint-config-onepass@latest --dev
+    npx install-peerdeps eslint-config-md@latest --dev
     ```
 
 3. You can see in your `package.json` there are now a big list of devDependencies.
@@ -35,7 +29,7 @@ It's usually best to install this locally once per project, that way you can hav
 
     ```json
     {
-      "extends": ["onepass"]
+      "extends": ["md"]
     }
     ```
 
@@ -57,15 +51,8 @@ It's usually best to install this locally once per project, that way you can hav
 
 1. First install everything needed:
 
-
-    i. For **JavaScript** only version:
     ```
-    npx install-peerdeps --global eslint-config-onepass@1.6.0
-    ```
-    ii. For **TypeScript** version:
-
-    ```
-    npx install-peerdeps --global eslint-config-onepass@latest
+    npx install-peerdeps --global eslint-config-md@latest
     ```
 
 2. Then you need to make a global `.eslintrc.json` file:
@@ -79,7 +66,7 @@ In your `.eslintrc.json` file, it should look like this:
 
 ```json
 {
-  "extends": ["onepass"]
+  "extends": ["md"]
 }
 ```
 
@@ -95,7 +82,7 @@ Note that prettier rules overwrite anything in this config (trailing comma, and 
 
 ```json
 {
-  "extends": ["onepass"],
+  "extends": ["md"],
   "rules": {
     "prettier/prettier": [
       "error",
@@ -141,8 +128,8 @@ Once you have done one, or both, of the above installs. You probably want your e
 
 ## With Create React App
 
-1. Run `npx install-peerdeps --dev eslint-config-onepass`
-1. Open your `package.json` and replace `"extends": "react-app"` with `"extends": "onepass"`
+1. Run `npx install-peerdeps --dev eslint-config-md`
+1. Open your `package.json` and replace `"extends": "react-app"` with `"extends": "md"`
 
 ## 🤬🤬🤬🤬 ITS NOT WORKING
 
