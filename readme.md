@@ -8,7 +8,7 @@ These are the settings for ESLint and Prettier I use for  my personal projects
 
 You can use this config **globally** and/or **locally** per project.
 
-It's usually best to install this locally once per project, that way you can have project specific settings as well as sync those settings with others working on your project via git.
+It's best to install this locally once per project, that way you can have project specific settings as well as sync those settings with others working on your project via git.
 
 ### Local / Per Project Install
 
@@ -43,31 +43,6 @@ It's usually best to install this locally once per project, that way you can hav
 
 6. Now you can manually lint your code by running `npm run lint` and fix all fixable issues with `npm run lint:fix`.
    You probably want your editor to do this though.
-
-### Global Install
-
-1. First install everything needed:
-
-    ```
-    npx install-peerdeps --global eslint-config-md@latest
-    ```
-
-2. Then you need to make a global `.eslintrc.json` file:
-
-ESLint will look for one in your home directory
-
-- `~/.eslintrc.json` for linux / mac
-- `C:\Users\username\.eslintrc.json` for windows
-
-In your `.eslintrc.json` file, it should look like this:
-
-```json
-{
-  "extends": ["md"]
-}
-```
-
-3. To use from the CLI, you can now run `eslint .` or configure your editor as we show next.
 
 ## Overriding
 
@@ -136,22 +111,10 @@ Once you have done one, or both, of the above installs. You probably want your e
 
 Start fresh. Sometimes npm modules can goof you up.
 
-### For local installation
-
 This will remove them all from the project.
 
 ```
-npm remove eslint-config-onepass babel-eslint eslint eslint-config-prettier eslint-config-airbnb eslint-plugin-html eslint-plugin-prettier eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react prettier eslint-plugin-react-hooks
-```
-
-Then, remove your `package-lock.json` file and delete the `node_modules/` directory.
-
-### For global installation
-
-Add the `--global` flag.
-
-```
-npm remove --global eslint-config-onepass babel-eslint eslint eslint-config-prettier eslint-config-airbnb eslint-plugin-html eslint-plugin-prettier eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react prettier eslint-plugin-react-hooks
+npm remove eslint eslint-config-airbnb eslint-config-prettier eslint-plugin-html eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-react eslint-plugin-react-hooks prettier
 ```
 
 Then, remove your `package-lock.json` file and delete the `node_modules/` directory.

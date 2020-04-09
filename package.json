@@ -1,9 +1,10 @@
 {
   "name": "eslint-config-md",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "ESLint and Prettier Custom Config",
   "main": "index.js",
-  "license": "WTFPL",
+  "type": "module",
+  "license": "MIT",
   "repository": "https://github.com/MateuszDabrowski/eslint-config-md",
   "author": "Mateusz Dąbrowski",
   "keywords": [
@@ -14,13 +15,9 @@
     "config",
     "prettier",
     "md",
-    "typescript",
     "js",
-    "ts"
   ],
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.25.0",
-    "@typescript-eslint/parser": "^2.25.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-config-prettier": "^6.10.1",
@@ -33,8 +30,6 @@
     "prettier": "^2.0.2"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.25.0",
-    "@typescript-eslint/parser": "^2.25.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-config-prettier": "^6.10.1",
@@ -44,8 +39,7 @@
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^3.0.0 || ^2.5.0",
-    "prettier": "^2.0.2",
-    "typescript": "^3.8.3"
+    "prettier": "^2.0.2"
   },
   "scripts": {
     "lint": "eslint .",
