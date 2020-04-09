@@ -81,8 +81,7 @@ You should read this entire thing. Serious!
 Once you have done one, or both, of the above installs. You probably want your editor to lint and fix for you. Here are the instructions for VS Code:
 
 1. Install the [ESLint package](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-2. Install the [Prettier package](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-3. Now we need to setup some VS Code settings via `Code/File` → `Preferences` → `Settings`. It's easier to enter these settings while editing the `settings.json` file, so click the `{}` icon in the top right corner:
+2. Now we need to setup some VS Code settings via `Code/File` → `Preferences` → `Settings`. It's easier to enter these settings while editing the `settings.json` file, so click the `{}` icon in the top right corner:
 
 ```js
 "editor.formatOnSave": true,
@@ -98,8 +97,14 @@ Once you have done one, or both, of the above installs. You probably want your e
 "[typescriptreact]": {
   "editor.formatOnSave": false
 },
-"eslint.autoFixOnSave": true,
-"prettier.disableLanguages": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+"eslint.workingDirectories": [
+  {
+    "mode": "auto"
+  }
+],
+"editor.codeActionsOnSave": {
+  "source.fixAll": true
+}
 ```
 
 ### With Create React App

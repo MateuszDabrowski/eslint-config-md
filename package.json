@@ -1,12 +1,11 @@
 {
   "name": "eslint-config-md",
-  "version": "1.1.0",
+  "version": "1.1.6",
   "description": "ESLint and Prettier Custom Config",
   "main": "index.js",
-  "type": "module",
   "license": "MIT",
-  "repository": "https://github.com/MateuszDabrowski/eslint-config-md",
-  "author": "Mateusz Dąbrowski",
+  "repository": "https://github.com/MateuszDabrowski/eslint-config-md.git",
+  "author": "Mateusz Dąbrowski <npm@mateuszdabrowski.pl>",
   "keywords": [
     "javascript",
     "ecmascript",
@@ -18,6 +17,7 @@
     "js"
   ],
   "peerDependencies": {
+    "babel-eslint": "10.1.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-config-prettier": "^6.10.1",
@@ -30,6 +30,7 @@
     "prettier": "^2.0.2"
   },
   "devDependencies": {
+    "babel-eslint": "10.1.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-config-prettier": "^6.10.1",

@@ -1,37 +1,34 @@
-export default {
+module.exports = {
     "env": {
         "browser": true,
         "jest": true,
+        "jquery": true,
         "node": true
     },
     "extends": [
-        "airbnb", // Uses rules from `eslint-config-airbnb`
-        'plugin:@typescript-eslint/recommended', // Uses rules from `@typescript-eslint/eslint-plugin`
+        "airbnb",
         "prettier",
-        "prettier/@typescript-eslint", // Use `eslint-config-prettier` to override conflicting rules from `@typescript-eslint/eslint-plugin`
-        "prettier/react",
+        "prettier/react"
     ],
-    "parser": '@typescript-eslint/parser',
+    "parser": "babel-eslint",
     "parserOptions": {
         "ecmaVersion": 2020, // allows parsing of modern ECMAScript features
         "ecmaFeatures": {
             "classes": true,
             "impliedStrict": true,
             "jsx": true // allows parsing of jsx
-        },
-        "sourceType": 'module' // allows for the use of `imports`
+        }
     },
     "plugins": [
         "html",
         "prettier",
-        "react-hooks",
-        '@typescript-eslint',
+        "react-hooks"
     ],
     "rules": {
         // eslint rules
         "arrow-body-style": [
             "error",
-            "always"
+            "as-needed"
         ],
         "comma-dangle": 0,
         "consistent-return": 0,
@@ -39,6 +36,13 @@ export default {
         "import": 0,
         "import/extensions": 0,
         "import/prefer-default-export": 0,
+        "indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
         "jsx-a11y/accessible-emoji": 0,
         "jsx-a11y/anchor-is-valid": [
             "warn",
@@ -52,7 +56,7 @@ export default {
         "max-len": 0,
         "no-alert": 0,
         "no-await-in-loop": 0,
-        "no-console": 2,
+        "no-console": 0,
         "no-debugger": 0,
         "no-param-reassign": [
             2,
@@ -107,13 +111,6 @@ export default {
         "prettier/prettier": [
             "error",
             {
-                "indent": [
-                    "error",
-                    4,
-                    {
-                        "SwitchCase": 1
-                    }
-                ],
                 "printWidth": 120,
                 "semi": true,
                 "singleQuote": true,
@@ -140,8 +137,7 @@ export default {
             {
                 "extensions": [
                     ".js",
-                    ".jsx",
-                    ".tsx"
+                    ".jsx"
                 ]
             }
         ],
@@ -159,31 +155,11 @@ export default {
                 "named": "never",
                 "asyncArrow": "always"
             }
-        ],
-        '@typescript-eslint/no-use-before-define': 'error',
-        '@typescript-eslint/camelcase': [
-            'error',
-            {
-                allow: [
-                    'utm_campaign',
-                    'utm_content',
-                    'utm_medium',
-                    'utm_source',
-                    'utm_term',
-                    'utm_invalid',
-                    'content_name',
-                    'content_category',
-                    'api_plan',
-                ],
-            },
-        ],
-        '@typescript-eslint/class-name-casing': 'error',
-        '@typescript-eslint/no-inferrable-types': 'error',
-        '@typescript-eslint/type-annotation-spacing': 'error',
+        ]
     },
     "settings": {
         "react": {
-            "version": 'detect', // tells `eslint-plugin-react` to auto detect react version
+            "version": 'detect'
         }
     }
 }
