@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-md",
-  "version": "1.1.6",
-  "description": "ESLint and Prettier Custom Config",
+  "version": "1.1.7",
+  "description": "Opninionated ESLint and Prettier Custom Config",
   "main": "index.js",
   "license": "MIT",
   "repository": "https://github.com/MateuszDabrowski/eslint-config-md.git",
